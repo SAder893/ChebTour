@@ -1,0 +1,304 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:rgb(201, 201, 134);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #0056b3;
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background: #fff9dc;
+    border-radius: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    color: #0056b3;
+    border: none;
+    text-align: left;
+    background: #fff9cf;
+    border-radius: 20px
+}
+
+.accordion-content {
+    padding: 20px;
+    display: none; /* Скрываем содержимое по умолчанию */
+}
+
+details[open] .accordion-content {
+    display: block; /* Показываем содержимое при открытии */
+    animation: slideDown 1.0s ease-in-out;
+}
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+    to {
+        max-height: 200px; /* Установите максимально возможную высоту */
+        opacity: 1;
+    }
+}
+.image {
+    border-radius: 15px; 
+    width: 600px; 
+    height: 350px
+}
+
+.footer {
+    width: 50 px;
+    height: 350px
+}
+
+.hr1 {
+    width: 100%;
+}
+
+.er {
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 30px;
+    background-color: #b8f9be;
+}
+
+.qw {
+    margin-left: 200px;
+}
+
+.Pyt {
+    height: 500px;
+    width: 900px;
+    margin-left: 520px;
+    margin-top: -520px;
+}
+
+.op {
+    padding: 25px 20px;
+    border-radius: 20px;
+    background-color: #cef9d2;
+    color: #000000;
+}
+
+html {
+    box-sizing: border-box;
+   }
+   
+   *,
+   *::after,
+   *::before {
+    box-sizing: inherit;
+   }
+   
+   /* Убираем стандартное подчёркивание у ссылок */
+   a {
+    text-decoration: none;
+   }
+   
+   /* Устанавливаем минимальный размер экрана и добавляем фоновое изображение */
+   body {
+    min-height: 100vh;
+    background-image: url(../images/bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    font-family: "Montserrat", sans-serif; /* Используем шрифт Montserrat */
+   }
+   
+   /* Стилизуем контейнер */
+   .container {
+    max-width: 1190px;
+    padding: 0 15px; /* Увеличиваем боковые отступы */
+  
+   }
+   
+   /* Стилизуем шапку сайта */
+   .header {
+    padding: 20px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+    background-color: #a7eeae;
+    border-radius: 20px;
+   }
+   
+   /* Стилизуем внутренний контейнер шапки */
+   .header__inner {
+    display: flex; /* Выстраиваем элементы внутри контейнера в строку */
+    justify-content: space-between; /* Распределяем элементы по ширине контейнера */
+    align-items: center; /* Выравниваем элементы по вертикали */
+   }
+   
+   /* Стилизуем логотип */
+   .logo {
+    text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+    font-size: 40px; /* Устанавливаем размер шрифта */
+    font-weight: 900; /* Устанавливаем жирное начертание шрифта */
+    color: #0056b3; /* Устанавливаем цвет логотипа */
+   }
+   
+   /* Стилизуем списки меню */
+   .menu__list {
+    display: flex; /* Отображаем элементы списка в строку */
+    list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+    font-weight: 600; /* Устанавливаем жирное начертание шрифта */
+   }
+   
+   /* Стилизуем пункты меню */
+   .menu__list-item {
+    margin-right: 20px; /* Добавляем отступ между пунктами меню */
+   }
+   
+   /* Стилизуем ссылки в меню */
+   .menu__list-link {
+    padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    color: #0056b3; /* Устанавливаем цвет ссылок */
+    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+   }
+   
+   /* Добавляем стилизацию ссылок в меню при наведении курсора */
+   .menu__list-link:hover {
+    color: #eb3e30; /* Задаём изменение цвета ссылок при наведении курсора */
+   }
+
+      /* Стилизуем контейнер */
+   .container1 {
+    max-width: 1190px;
+    padding: 0 15px; /* Увеличиваем боковые отступы */
+  
+   }
+   
+   /* Стилизуем шапку сайта */
+   .header1 {
+    padding: 20px; /* Увеличиваем верхний отступ шапки, чтобы логотип и меню не прилипали к экрану */
+    background-color: #4e4e4e;
+    border-radius: 20px;
+   }
+   
+   /* Стилизуем внутренний контейнер шапки */
+   .header__inner1 {
+    display: flex; /* Выстраиваем элементы внутри контейнера в строку */
+    justify-content: space-between; /* Распределяем элементы по ширине контейнера */
+    align-items: center; /* Выравниваем элементы по вертикали */
+   }
+   
+   /* Стилизуем логотип */
+   .logo1 {
+    text-transform: uppercase; /* Преобразуем текст в верхний регистр */
+    font-size: 40px; /* Устанавливаем размер шрифта */
+    font-weight: 900; /* Устанавливаем жирное начертание шрифта */
+    color: #0056b3; /* Устанавливаем цвет логотипа */
+   }
+   
+   /* Стилизуем списки меню */
+   .menu__list1 {
+    display: flex; /* Отображаем элементы списка в строку */
+    list-style: none; /* Убираем стандартные маркеры (чёрные точки) */
+    font-weight: 600; /* Устанавливаем жирное начертание шрифта */
+   }
+   
+   /* Стилизуем пункты меню */
+   .menu__list-item1 {
+    margin-right: 20px; /* Добавляем отступ между пунктами меню */
+   }
+   
+   /* Стилизуем ссылки в меню */
+   .menu__list-link1 {
+    padding: 10px 20px; /* Увеличиваем вертикальный и горизонтальный отступы */
+    font-size: 20px; /* Уменьшаем размер шрифта */
+    color: #0056b3; /* Устанавливаем цвет ссылок */
+    cursor: pointer; /* Задаём изменение вида курсора при наведении на пункты меню */
+    transition: all 0.3s; /* Добавляем плавное изменение стилей при наведении */
+   }
+   
+   /* Добавляем стилизацию ссылок в меню при наведении курсора */
+   .menu__list-link1:hover {
+    color: #eb3e30; /* Задаём изменение цвета ссылок при наведении курсора */
+   }
+
+.niz {
+    color:white;
+    font-size: 25px; /* Уменьшаем размер шрифта */
+    font-weight: 600; /* Устанавливаем жирное начертание шрифта */
+}
+
+#dann {
+    color:white;
+    font-weight: 200; /* Устанавливаем жирное начертание шрифта */
+}
+
+.e {
+    padding: 25px 20px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 10px;
+    background-color: #b8f9be;
+}
+
+.contact{
+    text-align: left;
+}
+
+.form-group label{
+    display:block;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    font-weight: 200;
+}
+
+.form-group input, .form-group textarea{
+    width: 100%;
+    box-sizing: border-box;
+    border:none;
+     background: transparent;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    font-weight: 200;
+}
+
+.row{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.row > .form-group{
+    width: 50%;
+}
+
+.row > .form-group:first-child{
+    margin-right: 20px;
+}
+
+.btn{
+    background:black;
+    padding: 10px 10px;
+    font-size: 15px;
+    color: white;
+    border: none;
+    font-family: inherit;
+    cursor: pointer;
+    width: 110px; 
+    height: 40px;
+    text-align: center;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
